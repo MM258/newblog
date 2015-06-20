@@ -61,9 +61,9 @@ WSGI_APPLICATION = 'law119.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'newblog',
-        'USER': 'admin',
-        'PASSWORD': 'admin',
+        'NAME': 'blogforlaw119',
+        'USER': 'law119',
+        'PASSWORD': 'law119><?',
         'HOST': '127.0.0.1',
         'port': '',
     }

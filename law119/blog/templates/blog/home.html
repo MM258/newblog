@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}home {% endblock %}
+{% block menu %}
+{% include "menu.html" with tag="index" %}
+{% endblock %}
+{% block content %}
+	<div class="content">
+		{% for cate in blogcate %}
+			{{ cate.title }}
+			<b>{{ cate.blog.title }}</b>
+		{% endfor %}
+<br><hr>
+		{% for cate in anli %}
+			{{ cate.title }}
+			<b>{{ cate.case.title }}</b><br>
+		{% endfor %}
+	</div>
+{% endblock %}
