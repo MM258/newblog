@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+	{% block title %}案例{% endblock %}
+	{% block menu %}
+		{% include "menu.html" with tag="case" %}
+	{% endblock %}
+	{% block content %}
+		{% block taitou %}
+			<div><a href="/case">经典案例</a> > <a href="/case/jinji/">经济案件</a></div>
+		{% endblock %}
+		{{ jinji }}
+		{% for post in jinji %}
+			{{post.anli}}<br/>
+			<p>{{post.case_content}}<br/>
+				<img src="{{post.case_imag}}"></p>
+			thanks visit my page!
+		{% endfor %}
+	{% endblock %}  

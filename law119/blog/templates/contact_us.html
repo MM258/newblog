@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}contact us{% endblock %}
+{% block menu %}
+{% include "menu.html" with tag="contact" %}
+{% endblock %}
+{% block content %}
+	{% for post in posts %}	 		
+		<div class="content">
+			{{ post.name }}<br/>
+			{{ post.company }}<br/>
+			{{ post.address }}<br/>
+			{{ post.telephone }}<br/>
+			<a href = "http://www.mtn-sh.com">{{ post.website }}</a><br/>
+			{{ post.email }}<br/>
+			<img src="{{ post.image}}">
+		</div>
+	{% endfor %}
+{% endblock %}

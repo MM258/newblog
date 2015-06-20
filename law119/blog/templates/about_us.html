@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}关于我们{% endblock %}
+{% block menu %}
+{% include "menu.html" with tag="about" %}
+{% endblock %}
+{% block content %}
+	{% for post in about %}	 		
+		<div class="content">
+			<p>简介：</p>
+			{{ post.context }}<br/>
+			<img src="{{ post.myimage }}">
+		</div>			
+	{% endfor %}
+{% endblock %}

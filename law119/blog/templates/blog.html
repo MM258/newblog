@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}home{% endblock %}
+{% block menu %}
+{% include "menu.html" with tag="blog" %}
+{% endblock %}
+{% block content %}
+{% for post in blog %}
+	<div >
+		<h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+		<div >{{ post.name }} / {{ post.publiction_date|date:"Y/m/d H:i" }}</div>
+		<div >{{ post.blog_content }}</div>
+	</div>
+{% endfor %}
+{% endblock %}
