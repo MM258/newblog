@@ -14,5 +14,99 @@
 			{{ cate.title }}
 			<b>{{ cate.case.title }}</b><br>
 		{% endfor %}
+    <div class="column2">
+
+    <div class="tab-content">
+        <div class="tab-pane fade active in" id="about">
+
+            <h2>Features</h2>
+            <ul class="content-list">
+                <li>Automatic indent and outdent</li>
+            </ul>
+            <h2>Get the Open-Source Code</h2>
+            <p>Ace is a community project. We actively encourage and support
+                contributions! The Ace source code is <a href="http://github.com/ajaxorg/ace">hosted on GitHub</a>
+                and released under the BSD license ‐
+                very simple and friendly to all kinds of projects, whether open-source
+                or not. Take charge of your editor and add your favorite language
+                highlighting and keybindings!
+            </p>
+            <pre>git clone git://github.com/ajaxorg/ace.git</pre>
+            <h2>History</h2>
+
+            <h2>Related Projects</h2>
+            <ul class="content-list">
+                <li><a href="https://github.com/joewalker/gcli">GCLI</a></li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="embedding">
+            <h1>Embedding Ace in Your Site</h1>
+            <p>Ace can be easily embedded into a web page. Get prebuilt version of ace from
+            <a href="https://github.com/ajaxorg/ace-builds/">ace-builds</a> repository and use the code below:</p>
+            <p>The following options are available to you for your search parameters:</p>
+            <ul>
+                <li>
+                    <code>needle</code>: The string or regular expression you're looking for
+                </li>
+            </ul>
+
+
+            <h2>Testing Your Highlighter</h2>
+            <p>The best way to test your tokenizer is to see it live, right? To do that, you'll want to modify the <a href="build/kitchen-sink.html">live Ace demo</a> to preview your changes. You can find this file in the root Ace directory with the name <em>kitchen-sink.html</em>.</p>
+            <ol>
+                <li>
+                    add an entry to <code>supportedModes</code> in <a href="https://github.com/ajaxorg/ace/blob/master/lib/ace/ext/modelist.js#L53"><code>ace/ext/modelist.js</code></a>
+                </li>
+            </ol>
+            <p>Once you set this up, you should be able to witness a live demonstration of your new highlighter.</p>
+
+        </div>
+        <div class="tab-pane fade" id="api">
+            <div class="row centerpiece">
+                <div id="sidebarContainer" class="span2">
+                    <div id="sidebar">
+                        <div id="well">
+
+                            <ul class="menu">
+                                <li>
+                                    <div class="menu-item"><a href="./api/ace.html" class="menuLink namespace">Ace</a></div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="apiHolder">
+                    <div id="documentation" class="span7">
+                    <h1>Ace API Reference</h1>
+                    <p>Welcome to the Ace API Reference!</p>
+
+                    <img src="doc/template/resources/images/Ace_ERD.png" style="max-width:100%; max-height:100%">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="production">
+            <h1>Projects Using Ace</h1>
+            <p>Ace is used all over the web in all kinds of production applications. Here is
+                just a small sampling:</p>
+            <ul class="menu-list">
+                <li>
+                    <img src="doc/site/images/github-logo.png" style="left: -15px; top: -9px;">
+                    <a href="https://github.com/blog/905-edit-like-an-ace">GitHub</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="support">
+            <h1>Support and User Resources</h1>
+            <p>Aside from our GitHub page, here's a list of places you can find help for Ace:</p>
+            <ul class="content-list">
+                <li><a href="http://groups.google.com/group/ace-discuss">Ace Google Group</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
 	</div>
 {% endblock %}
